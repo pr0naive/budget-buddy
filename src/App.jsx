@@ -27,7 +27,7 @@ const THEMES = {
   sunset: { name: "Sunset", g1: "#FF6B35", g2: "#FF8F00", accent: "#E040FB" },
   ocean: { name: "Ocean", g1: "#0EA5E9", g2: "#2563EB", accent: "#06B6D4" },
   forest: { name: "Forest", g1: "#16A34A", g2: "#15803D", accent: "#84CC16" },
-  berry: { name: "Berry", g1: "#C026D3", g2: "#9333EA", accent: "#F472B6" },
+  babyPink: { name: "Baby Pink", g1: "#FBCFE8", g2: "#F472B6", accent: "#FDA4AF" },
   midnight: { name: "Midnight", g1: "#6366F1", g2: "#4338CA", accent: "#818CF8" },
 };
 
