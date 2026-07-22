@@ -305,7 +305,7 @@ export default function App(){
 
     <div style={{position:"fixed",bottom:0,left:"50%",transform:"translateX(-50%)",width:"100%",maxWidth:480,background:dark?"rgba(13,13,20,0.92)":"rgba(244,241,234,0.92)",backdropFilter:"blur(16px)",borderTop:`1px solid ${c.bd}`,display:"flex",justifyContent:"space-around",alignItems:"center",padding:"4px 0 8px",zIndex:100}}>
       <button className="h" onClick={()=>setView("home")} style={{...B,background:view==="home"?c.pg:"transparent",padding:"5px 13px",borderRadius:10,fontSize:10,color:view==="home"?c.p:c.mu}}><div style={{textAlign:"center"}}><div style={{fontSize:16}}>🏠</div>Home</div></button>
-      <button onClick={()=>{if(!saving){setView("add");setTxType("expense");reset()}}} style={{...B,width:50,height:50,borderRadius:"50%",background:`linear-gradient(135deg,${c.g1},${c.g2})`,color:"#fff",fontSize:24,transform:"translateY(-8px)",boxShadow:`0 4px 14px ${c.g1}44`}}>+</button>
+      <button onClick={()=>{if(!saving&&view!=="add"){haptic();setView("add");setTxType("expense");reset()}}} style={{...B,width:50,height:50,borderRadius:"50%",background:`linear-gradient(135deg,${c.g1},${c.g2})`,color:"#fff",fontSize:24,transform:"translateY(-8px)",boxShadow:`0 4px 14px ${c.g1}44`}}>+</button>
       <button className="h" onClick={()=>setView("history")} style={{...B,background:view==="history"?c.pg:"transparent",padding:"5px 13px",borderRadius:10,fontSize:10,color:view==="history"?c.p:c.mu}}><div style={{textAlign:"center"}}><div style={{fontSize:16}}>📋</div>History</div></button>
     </div>
   </div>);
